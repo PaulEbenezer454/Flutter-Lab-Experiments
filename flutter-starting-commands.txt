@@ -1,0 +1,77 @@
+# Flutter starting commands (Windows / macOS / Linux)
+
+Check installation:
+
+```bash
+flutter --version
+flutter doctor
+flutter devices
+```
+
+Create a project:
+
+```bash
+flutter create project_name
+cd project_name
+code .
+```
+
+Get dependencies and run:
+
+```bash
+flutter pub get
+flutter run
+```
+
+Run on Chrome:
+
+```bash
+flutter run -d chrome
+```
+
+Clean generated build files:
+
+```bash
+flutter clean
+flutter pub get
+```
+
+Build for Android:
+
+```bash
+flutter build apk
+```
+
+Build for iOS (macOS + Xcode required):
+
+```bash
+flutter build ios
+flutter build ipa
+```
+
+Build for Web:
+
+```bash
+flutter build web
+```
+
+Useful device commands:
+
+```bash
+flutter devices
+flutter emulators
+flutter emulators --launch <emulator_id>
+```
+
+## Run an existing experiment
+Open the experiment folder containing `pubspec.yaml`, then run `flutter pub get` and `flutter run`.
+
+## Notes
+- Run Flutter commands from the project folder containing `pubspec.yaml`.
+- If `flutter` is not found, install Flutter SDK and add its `bin` directory to PATH.
+- `code .` opens the current folder in Visual Studio Code; install the VS Code command-line launcher if the command is not recognised.
+- iOS builds require macOS and Xcode.
+- Android builds require Android SDK / Android Studio setup.
+
+## Source
+Copied from [DominicRaja2005/flutter](https://github.com/DominicRaja2005/flutter).
