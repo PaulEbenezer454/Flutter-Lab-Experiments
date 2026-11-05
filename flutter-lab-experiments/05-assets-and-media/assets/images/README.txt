@@ -1,0 +1,1 @@
+Add an image named flutter.png to this folder before running the app. The image is intentionally not bundled.
