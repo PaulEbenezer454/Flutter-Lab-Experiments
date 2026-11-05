@@ -1,0 +1,16 @@
+import 'package:flutter/material.dart';
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) => Scaffold(
+    appBar: AppBar(title: const Text('Home')),
+    body: Center(
+      child: ElevatedButton(
+        onPressed: () => Navigator.pushNamed(context, '/profile'),
+        child: const Text('Go to Profile'),
+      ),
+    ),
+  );
+}
